@@ -3,7 +3,7 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
 const { requestLogger, errorLogger, postLogger } = require('./middlewares/logger');
-const Processing = require('./tools/classes/Processing');
+const Processing = require('./lib/Processing');
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true, }));
 

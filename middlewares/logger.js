@@ -31,9 +31,9 @@ const postLogger = createLogger({
   ),
 })
 
-const infoBotsLogger = createLogger({
+const apiLogger = createLogger({
   transports: [
-    new transports.File({ filename: './logs/infoBots.json' })
+    new transports.File({ filename: './logs/api.json' })
   ],
   format: format.combine(
     format.timestamp(),
@@ -45,5 +45,5 @@ module.exports = {
   requestLogger,
   errorLogger,
   postLogger,
-  infoBotsLogger
+  apiLogger
 };
