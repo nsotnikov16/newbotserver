@@ -4,4 +4,5 @@
 | npm run start | обычный запуск сервера |
 | npm run dev | запуск сервера в режиме разработки (см. nodemon) |
 | pm2 start newserver | запуск в фоновом режиме |
+| pm2 restart newserver | перезапустить в фоновом режиме |
 | pm2 stop newserver | остановка сервера в фоновом режиме |
