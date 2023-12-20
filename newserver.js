@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const { requestLogger, errorLogger, postLogger } = require('./middlewares/logger');
+const { requestLogger, errorLogger, postLogger } = require('./tools/logger');
 const Processing = require('./lib/Processing');
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true, }));
@@ -20,4 +20,4 @@ app.post('/', async (req, res) => {
 
 app.use(errorLogger);
 
-app.listen(2526, '45.141.76.219', () => console.log('Server started...'))
+app.listen(process.env.PORT, () => console.log('Server started...'))
