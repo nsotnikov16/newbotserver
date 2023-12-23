@@ -16,6 +16,7 @@
 | lib/entity/Random.js | Блок "Случайный выбор" |
 | lib/Api.js | API |
 | lib/History.js | Работа с историями пользователя |
+| lib/History.js | Работа с логами |
 | lib/Processing.js | **Процессинг (основной функционал тут)** |
 | logs | Логи |
 | logs/express | Логи express |
@@ -26,5 +27,4 @@
 | tools | Инструменты |
 | tools/constants.js | Константы |
 | tools/functions.js | Прочие функции |
-| tools/logger.js | Работа с логами |
 | newserver.js | **Основной файл работы сервера** |
